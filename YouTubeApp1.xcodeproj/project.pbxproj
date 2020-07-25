@@ -15,6 +15,8 @@
 		CE29F1F024CC845900542D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE29F1EE24CC845900542D4C /* LaunchScreen.storyboard */; };
 		CE29F1FB24CC845A00542D4C /* YouTubeApp1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F1FA24CC845A00542D4C /* YouTubeApp1Tests.swift */; };
 		CE29F20624CC845A00542D4C /* YouTubeApp1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F20524CC845A00542D4C /* YouTubeApp1UITests.swift */; };
+		CE29F22224CC906500542D4C /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F22124CC906500542D4C /* VideoListCell.swift */; };
+		CE29F22524CC923200542D4C /* VideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29F22424CC923200542D4C /* VideoListCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		CE29F20124CC845A00542D4C /* YouTubeApp1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YouTubeApp1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE29F20524CC845A00542D4C /* YouTubeApp1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeApp1UITests.swift; sourceTree = "<group>"; };
 		CE29F20724CC845A00542D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE29F22124CC906500542D4C /* VideoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListCell.swift; sourceTree = "<group>"; };
+		CE29F22424CC923200542D4C /* VideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		CE29F1E224CC845500542D4C /* YouTubeApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				CE29F22324CC91DB00542D4C /* xibs */,
+				CE29F21424CC879800542D4C /* Cells */,
 				CE29F1E324CC845500542D4C /* AppDelegate.swift */,
 				CE29F1E524CC845500542D4C /* SceneDelegate.swift */,
 				CE29F1E724CC845500542D4C /* ViewController.swift */,
@@ -126,6 +132,22 @@
 				CE29F20724CC845A00542D4C /* Info.plist */,
 			);
 			path = YouTubeApp1UITests;
+			sourceTree = "<group>";
+		};
+		CE29F21424CC879800542D4C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F22124CC906500542D4C /* VideoListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CE29F22324CC91DB00542D4C /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				CE29F22424CC923200542D4C /* VideoListCell.xib */,
+			);
+			path = xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE29F1F024CC845900542D4C /* LaunchScreen.storyboard in Resources */,
+				CE29F22524CC923200542D4C /* VideoListCell.xib in Resources */,
 				CE29F1ED24CC845900542D4C /* Assets.xcassets in Resources */,
 				CE29F1EB24CC845500542D4C /* Main.storyboard in Resources */,
 			);
@@ -259,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE29F1E824CC845500542D4C /* ViewController.swift in Sources */,
+				CE29F22224CC906500542D4C /* VideoListCell.swift in Sources */,
 				CE29F1E424CC845500542D4C /* AppDelegate.swift in Sources */,
 				CE29F1E624CC845500542D4C /* SceneDelegate.swift in Sources */,
 			);
