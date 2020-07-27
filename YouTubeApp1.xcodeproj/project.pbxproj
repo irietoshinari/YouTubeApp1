@@ -22,6 +22,7 @@
 		CE29F22224CC906500542D4C /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F22124CC906500542D4C /* VideoListCell.swift */; };
 		CE29F22524CC923200542D4C /* VideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29F22424CC923200542D4C /* VideoListCell.xib */; };
 		CE7FA8ED24CF404F00A2DE8A /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FA8EC24CF404F00A2DE8A /* Channel.swift */; };
+		CEA09DC624CF557E000ECD3D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA09DC524CF557E000ECD3D /* APIRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		CE29F22424CC923200542D4C /* VideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCell.xib; sourceTree = "<group>"; };
 		CE798AD80272FB3738642BDC /* Pods-YouTubeApp1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeApp1Tests.release.xcconfig"; path = "Target Support Files/Pods-YouTubeApp1Tests/Pods-YouTubeApp1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE7FA8EC24CF404F00A2DE8A /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		CEA09DC524CF557E000ECD3D /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		D267BB1C253AA92C1E447CDE /* Pods_YouTubeApp1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeApp1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,6 +158,7 @@
 		CE29F1E224CC845500542D4C /* YouTubeApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				CEA09DC424CF54E8000ECD3D /* Utility */,
 				CE27D10E24CD853F0060C7A7 /* Models */,
 				CE29F22324CC91DB00542D4C /* xibs */,
 				CE29F21424CC879800542D4C /* Cells */,
@@ -202,6 +205,14 @@
 				CE29F22424CC923200542D4C /* VideoListCell.xib */,
 			);
 			path = xibs;
+			sourceTree = "<group>";
+		};
+		CEA09DC424CF54E8000ECD3D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CEA09DC524CF557E000ECD3D /* APIRequest.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,6 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE29F1E824CC845500542D4C /* ViewController.swift in Sources */,
+				CEA09DC624CF557E000ECD3D /* APIRequest.swift in Sources */,
 				CE7FA8ED24CF404F00A2DE8A /* Channel.swift in Sources */,
 				CE29F22224CC906500542D4C /* VideoListCell.swift in Sources */,
 				CE29F1E424CC845500542D4C /* AppDelegate.swift in Sources */,
