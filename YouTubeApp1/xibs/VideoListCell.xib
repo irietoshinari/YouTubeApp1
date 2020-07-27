@@ -17,13 +17,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="346" height="435"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YIc-tm-A2y">
-                        <rect key="frame" x="0.0" y="15" width="346" height="280"/>
-                        <color key="backgroundColor" systemColor="systemRedColor"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="280" id="ttc-55-mNz"/>
-                        </constraints>
-                    </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gKE-uL-sm9">
                         <rect key="frame" x="60" y="305" width="276" height="41"/>
                         <subviews>
@@ -33,10 +26,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="説明文です" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rw-Wq-RqI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="説明文です" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rw-Wq-RqI">
                                 <rect key="frame" x="0.0" y="20.5" width="276" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -49,10 +42,19 @@
                             <constraint firstAttribute="width" constant="40" id="zmh-C5-dvU"/>
                         </constraints>
                     </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YIc-tm-A2y">
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="280"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="330" id="Gbn-aC-V0N"/>
+                            <constraint firstAttribute="height" constant="280" id="ttc-55-mNz"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="gKE-uL-sm9" firstAttribute="top" secondItem="YIc-tm-A2y" secondAttribute="bottom" constant="10" id="0RG-Z0-9ER"/>
                     <constraint firstItem="EiO-gZ-0hx" firstAttribute="leading" secondItem="dBB-8i-nFg" secondAttribute="leading" constant="10" id="32o-NY-ZQY"/>
+                    <constraint firstItem="gKE-uL-sm9" firstAttribute="top" secondItem="YIc-tm-A2y" secondAttribute="bottom" constant="50" id="5XP-xY-hA0"/>
                     <constraint firstItem="gKE-uL-sm9" firstAttribute="top" secondItem="YIc-tm-A2y" secondAttribute="bottom" constant="10" id="6Us-gr-y4L"/>
                     <constraint firstAttribute="bottom" secondItem="gKE-uL-sm9" secondAttribute="bottom" constant="23" id="8Vk-gH-nxl"/>
                     <constraint firstItem="YIc-tm-A2y" firstAttribute="top" secondItem="dBB-8i-nFg" secondAttribute="top" constant="15" id="CQT-kd-Dny"/>
@@ -67,6 +69,9 @@
             <size key="customSize" width="346" height="435"/>
             <connections>
                 <outlet property="channelImageView" destination="EiO-gZ-0hx" id="NQ9-Wj-AUa"/>
+                <outlet property="descriptionLabel" destination="1Rw-Wq-RqI" id="Eku-9e-2tw"/>
+                <outlet property="thumbnailImageView" destination="YIc-tm-A2y" id="6TV-RO-VOW"/>
+                <outlet property="titleLabel" destination="BQF-fL-ksK" id="17N-ef-TXY"/>
             </connections>
             <point key="canvasLocation" x="352.17391304347831" y="-109.48660714285714"/>
         </collectionViewCell>
