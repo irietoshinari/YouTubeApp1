@@ -22,7 +22,10 @@
 		CE29F22224CC906500542D4C /* VideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE29F22124CC906500542D4C /* VideoListCell.swift */; };
 		CE29F22524CC923200542D4C /* VideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE29F22424CC923200542D4C /* VideoListCell.xib */; };
 		CE7FA8ED24CF404F00A2DE8A /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7FA8EC24CF404F00A2DE8A /* Channel.swift */; };
-		CEA09DC624CF557E000ECD3D /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA09DC524CF557E000ECD3D /* APIRequest.swift */; };
+		CEA09DC624CF557E000ECD3D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA09DC524CF557E000ECD3D /* API.swift */; };
+		CEA09DC824CFA66A000ECD3D /* BaseTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA09DC724CFA66A000ECD3D /* BaseTabBar.storyboard */; };
+		CEA09DCA24CFA9EA000ECD3D /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA09DC924CFA9EA000ECD3D /* BaseTabBarController.swift */; };
+		CEA09DCE24CFB209000ECD3D /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA09DCD24CFB209000ECD3D /* UIImage-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +72,10 @@
 		CE29F22424CC923200542D4C /* VideoListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoListCell.xib; sourceTree = "<group>"; };
 		CE798AD80272FB3738642BDC /* Pods-YouTubeApp1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YouTubeApp1Tests.release.xcconfig"; path = "Target Support Files/Pods-YouTubeApp1Tests/Pods-YouTubeApp1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		CE7FA8EC24CF404F00A2DE8A /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
-		CEA09DC524CF557E000ECD3D /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		CEA09DC524CF557E000ECD3D /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		CEA09DC724CFA66A000ECD3D /* BaseTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseTabBar.storyboard; sourceTree = "<group>"; };
+		CEA09DC924CFA9EA000ECD3D /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		CEA09DCD24CFB209000ECD3D /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 		D267BB1C253AA92C1E447CDE /* Pods_YouTubeApp1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeApp1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -158,13 +164,15 @@
 		CE29F1E224CC845500542D4C /* YouTubeApp1 */ = {
 			isa = PBXGroup;
 			children = (
-				CEA09DC424CF54E8000ECD3D /* Utility */,
+				CEA09DCC24CFB1E5000ECD3D /* Extensions */,
+				CEA09DC424CF54E8000ECD3D /* Service */,
 				CE27D10E24CD853F0060C7A7 /* Models */,
 				CE29F22324CC91DB00542D4C /* xibs */,
 				CE29F21424CC879800542D4C /* Cells */,
+				CEA09DCB24CFAA3B000ECD3D /* ViewControllers  */,
 				CE29F1E324CC845500542D4C /* AppDelegate.swift */,
 				CE29F1E524CC845500542D4C /* SceneDelegate.swift */,
-				CE29F1E724CC845500542D4C /* ViewController.swift */,
+				CEA09DC724CFA66A000ECD3D /* BaseTabBar.storyboard */,
 				CE29F1E924CC845500542D4C /* Main.storyboard */,
 				CE29F1EC24CC845900542D4C /* Assets.xcassets */,
 				CE29F1EE24CC845900542D4C /* LaunchScreen.storyboard */,
@@ -207,12 +215,29 @@
 			path = xibs;
 			sourceTree = "<group>";
 		};
-		CEA09DC424CF54E8000ECD3D /* Utility */ = {
+		CEA09DC424CF54E8000ECD3D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				CEA09DC524CF557E000ECD3D /* APIRequest.swift */,
+				CEA09DC524CF557E000ECD3D /* API.swift */,
 			);
-			path = Utility;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEA09DCB24CFAA3B000ECD3D /* ViewControllers  */ = {
+			isa = PBXGroup;
+			children = (
+				CEA09DC924CFA9EA000ECD3D /* BaseTabBarController.swift */,
+				CE29F1E724CC845500542D4C /* ViewController.swift */,
+			);
+			path = "ViewControllers ";
+			sourceTree = "<group>";
+		};
+		CEA09DCC24CFB1E5000ECD3D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CEA09DCD24CFB209000ECD3D /* UIImage-Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -326,6 +351,7 @@
 				CE29F1F024CC845900542D4C /* LaunchScreen.storyboard in Resources */,
 				CE29F22524CC923200542D4C /* VideoListCell.xib in Resources */,
 				CE29F1ED24CC845900542D4C /* Assets.xcassets in Resources */,
+				CEA09DC824CFA66A000ECD3D /* BaseTabBar.storyboard in Resources */,
 				CE29F1EB24CC845500542D4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,9 +480,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA09DCA24CFA9EA000ECD3D /* BaseTabBarController.swift in Sources */,
 				CE29F1E824CC845500542D4C /* ViewController.swift in Sources */,
-				CEA09DC624CF557E000ECD3D /* APIRequest.swift in Sources */,
+				CEA09DC624CF557E000ECD3D /* API.swift in Sources */,
 				CE7FA8ED24CF404F00A2DE8A /* Channel.swift in Sources */,
+				CEA09DCE24CFB209000ECD3D /* UIImage-Extension.swift in Sources */,
 				CE29F22224CC906500542D4C /* VideoListCell.swift in Sources */,
 				CE29F1E424CC845500542D4C /* AppDelegate.swift in Sources */,
 				CE29F1E624CC845500542D4C /* SceneDelegate.swift in Sources */,
