@@ -26,6 +26,10 @@
 		CEA09DC824CFA66A000ECD3D /* BaseTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA09DC724CFA66A000ECD3D /* BaseTabBar.storyboard */; };
 		CEA09DCA24CFA9EA000ECD3D /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA09DC924CFA9EA000ECD3D /* BaseTabBarController.swift */; };
 		CEA09DCE24CFB209000ECD3D /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA09DCD24CFB209000ECD3D /* UIImage-Extension.swift */; };
+		CEA09DD324CFBA1F000ECD3D /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA09DD224CFBA1F000ECD3D /* Search.storyboard */; };
+		CEA09DD524CFBAC7000ECD3D /* Channel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA09DD424CFBAC7000ECD3D /* Channel.storyboard */; };
+		CEA09DD724CFBB0E000ECD3D /* Inbox.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA09DD624CFBB0E000ECD3D /* Inbox.storyboard */; };
+		CEA09DD924CFBB37000ECD3D /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA09DD824CFBB37000ECD3D /* Library.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		CEA09DC724CFA66A000ECD3D /* BaseTabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseTabBar.storyboard; sourceTree = "<group>"; };
 		CEA09DC924CFA9EA000ECD3D /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		CEA09DCD24CFB209000ECD3D /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
+		CEA09DD224CFBA1F000ECD3D /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		CEA09DD424CFBAC7000ECD3D /* Channel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Channel.storyboard; sourceTree = "<group>"; };
+		CEA09DD624CFBB0E000ECD3D /* Inbox.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Inbox.storyboard; sourceTree = "<group>"; };
+		CEA09DD824CFBB37000ECD3D /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
 		D267BB1C253AA92C1E447CDE /* Pods_YouTubeApp1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YouTubeApp1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,11 +177,10 @@
 				CE27D10E24CD853F0060C7A7 /* Models */,
 				CE29F22324CC91DB00542D4C /* xibs */,
 				CE29F21424CC879800542D4C /* Cells */,
+				CEA09DCF24CFB915000ECD3D /* StoryBoards */,
 				CEA09DCB24CFAA3B000ECD3D /* ViewControllers  */,
 				CE29F1E324CC845500542D4C /* AppDelegate.swift */,
 				CE29F1E524CC845500542D4C /* SceneDelegate.swift */,
-				CEA09DC724CFA66A000ECD3D /* BaseTabBar.storyboard */,
-				CE29F1E924CC845500542D4C /* Main.storyboard */,
 				CE29F1EC24CC845900542D4C /* Assets.xcassets */,
 				CE29F1EE24CC845900542D4C /* LaunchScreen.storyboard */,
 				CE29F1F124CC845900542D4C /* Info.plist */,
@@ -238,6 +245,19 @@
 				CEA09DCD24CFB209000ECD3D /* UIImage-Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CEA09DCF24CFB915000ECD3D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CEA09DC724CFA66A000ECD3D /* BaseTabBar.storyboard */,
+				CE29F1E924CC845500542D4C /* Main.storyboard */,
+				CEA09DD224CFBA1F000ECD3D /* Search.storyboard */,
+				CEA09DD424CFBAC7000ECD3D /* Channel.storyboard */,
+				CEA09DD624CFBB0E000ECD3D /* Inbox.storyboard */,
+				CEA09DD824CFBB37000ECD3D /* Library.storyboard */,
+			);
+			path = StoryBoards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,10 +369,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE29F1F024CC845900542D4C /* LaunchScreen.storyboard in Resources */,
+				CEA09DD524CFBAC7000ECD3D /* Channel.storyboard in Resources */,
 				CE29F22524CC923200542D4C /* VideoListCell.xib in Resources */,
 				CE29F1ED24CC845900542D4C /* Assets.xcassets in Resources */,
+				CEA09DD924CFBB37000ECD3D /* Library.storyboard in Resources */,
 				CEA09DC824CFA66A000ECD3D /* BaseTabBar.storyboard in Resources */,
+				CEA09DD324CFBA1F000ECD3D /* Search.storyboard in Resources */,
 				CE29F1EB24CC845500542D4C /* Main.storyboard in Resources */,
+				CEA09DD724CFBB0E000ECD3D /* Inbox.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

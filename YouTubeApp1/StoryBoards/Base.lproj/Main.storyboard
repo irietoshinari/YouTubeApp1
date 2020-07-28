@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YouTubeApp1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jjE-U7-eLW">
+                                <rect key="frame" x="0.0" y="96" width="414" height="705"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="81o-uy-ZNk">
+                                    <size key="itemSize" width="93" height="167"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <view key="backgroundView" contentMode="scaleToFill" id="wCV-xV-8O1">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="705"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UlN-5g-R2X">
+                                            <rect key="frame" x="8" y="8" width="414" height="108"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="youtubeアイコン" translatesAutoresizingMaskIntoConstraints="NO" id="Nhi-Dt-gqT">
+                                                    <rect key="frame" x="8" y="29" width="60" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="7Zj-ew-uJ5"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="9dF-GQ-joq"/>
+                                                        <constraint firstAttribute="width" secondItem="Nhi-Dt-gqT" secondAttribute="height" multiplier="6:5" id="P9S-xL-yb1"/>
+                                                        <constraint firstAttribute="width" secondItem="Nhi-Dt-gqT" secondAttribute="height" multiplier="6:5" id="eLX-nT-bPq"/>
+                                                        <constraint firstAttribute="height" constant="50" id="izc-si-23t"/>
+                                                        <constraint firstAttribute="width" constant="60" id="woa-hc-rls"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="zkP-Zm-RJb"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="iOS の画像 (12)" translatesAutoresizingMaskIntoConstraints="NO" id="dY0-bZ-bDX">
+                                                    <rect key="frame" x="310" y="21" width="50" height="60"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="0nq-5t-f56"/>
+                                                        <constraint firstAttribute="width" constant="60" id="BDe-mO-fYQ"/>
+                                                        <constraint firstAttribute="width" secondItem="dY0-bZ-bDX" secondAttribute="height" multiplier="73:66" id="RCa-9A-Zk6"/>
+                                                        <constraint firstAttribute="width" secondItem="dY0-bZ-bDX" secondAttribute="height" multiplier="5:6" id="m6j-Db-qxU"/>
+                                                        <constraint firstAttribute="width" secondItem="dY0-bZ-bDX" secondAttribute="height" multiplier="5:6" id="uNW-Mz-uCA"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbu-XN-Yeg">
+                                                    <rect key="frame" x="260" y="37" width="32" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="BNF-NB-JA7"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="Fgs-Ec-7cM"/>
+                                                        <constraint firstAttribute="width" constant="50" id="HWO-yZ-LuL"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="IvL-bk-iDY"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="L3y-0Y-k2I"/>
+                                                        <constraint firstAttribute="width" secondItem="Kbu-XN-Yeg" secondAttribute="height" multiplier="23:35" id="NTk-3v-yD5"/>
+                                                        <constraint firstAttribute="width" secondItem="Kbu-XN-Yeg" secondAttribute="height" multiplier="25:14" id="OKf-wR-MDz"/>
+                                                        <constraint firstAttribute="width" secondItem="Kbu-XN-Yeg" secondAttribute="height" multiplier="23:32" id="Q2U-bk-J2g"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="35" id="SDi-hW-oif"/>
+                                                        <constraint firstAttribute="width" secondItem="Kbu-XN-Yeg" secondAttribute="height" multiplier="46:49" id="h3M-O5-QHZ"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="v4X-Dy-eoq"/>
+                                                    </constraints>
+                                                    <state key="normal" image="ifn0556"/>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="YouTube" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTN-R4-jQt">
+                                                    <rect key="frame" x="76" y="8" width="81" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="JTN-R4-jQt" secondAttribute="height" multiplier="27:8" id="Qbw-Yg-JkA"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WD3-3D-QVe">
+                                                    <rect key="frame" x="200" y="30" width="41" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="WD3-3D-QVe" secondAttribute="height" multiplier="41:53" id="0A3-xU-ofH"/>
+                                                        <constraint firstAttribute="width" constant="35" id="6hE-Ju-131"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Blt-J1-3Na"/>
+                                                        <constraint firstAttribute="height" constant="50" id="CJz-5E-kij"/>
+                                                        <constraint firstAttribute="width" secondItem="WD3-3D-QVe" secondAttribute="height" multiplier="41:53" id="U6p-87-eYg"/>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="XAn-eA-Vy1"/>
+                                                        <constraint firstAttribute="width" secondItem="WD3-3D-QVe" secondAttribute="height" multiplier="41:53" id="kgR-6j-vCY"/>
+                                                        <constraint firstAttribute="width" secondItem="WD3-3D-QVe" secondAttribute="height" multiplier="41:45" id="u2K-Kt-sMv"/>
+                                                        <constraint firstAttribute="width" secondItem="WD3-3D-QVe" secondAttribute="height" multiplier="41:45" id="ugO-BB-Fyg"/>
+                                                    </constraints>
+                                                    <state key="normal" backgroundImage="icon_108190"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="UlN-5g-R2X" firstAttribute="top" secondItem="wCV-xV-8O1" secondAttribute="top" constant="8" id="GpY-Lm-Ilr"/>
+                                        <constraint firstItem="UlN-5g-R2X" firstAttribute="top" secondItem="wCV-xV-8O1" secondAttribute="top" constant="8" id="caK-md-iib"/>
+                                        <constraint firstAttribute="trailing" secondItem="UlN-5g-R2X" secondAttribute="trailing" constant="-8" id="fGu-65-baw"/>
+                                        <constraint firstItem="UlN-5g-R2X" firstAttribute="top" secondItem="wCV-xV-8O1" secondAttribute="top" constant="8" id="frd-Rh-Zgm"/>
+                                        <constraint firstItem="UlN-5g-R2X" firstAttribute="leading" secondItem="wCV-xV-8O1" secondAttribute="leading" constant="8" id="r9n-bV-sBx"/>
+                                    </constraints>
+                                </view>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="XOQ-0n-Uvd">
+                                        <rect key="frame" x="0.0" y="0.0" width="93" height="167"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pAq-S1-3yv">
+                                            <rect key="frame" x="0.0" y="0.0" width="93" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="93" height="167"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jjE-U7-eLW" secondAttribute="bottom" id="0Z5-wO-cUT"/>
+                            <constraint firstItem="jjE-U7-eLW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8tC-el-Afn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jjE-U7-eLW" secondAttribute="trailing" id="LId-q9-kWb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerTopConstraint" destination="wCV-xV-8O1" id="ehC-WQ-Dsb"/>
+                        <outlet property="headerView" destination="wCV-xV-8O1" id="9GH-8d-qPx"/>
+                        <outlet property="profileImageView" destination="dY0-bZ-bDX" id="hwE-Xd-od7"/>
+                        <outlet property="videoListCollectionView" destination="jjE-U7-eLW" id="Z7Y-BD-zcf"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="iOS の画像 (12)" width="1044" height="1568"/>
+        <image name="icon_108190" width="512" height="512"/>
+        <image name="ifn0556" width="200" height="160"/>
+        <image name="youtubeアイコン" width="800" height="641"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
